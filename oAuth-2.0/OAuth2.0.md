@@ -9,12 +9,16 @@
 클라이언트 환경에 따른 인증 및 권한 위임 방법  
 access token을 발급받기 위해서 필수로 필요  
 
-- **refresh_token**  
-- **implicit**  
-- **password**  
 - **client_credentials**  
+  - 개인의 리소스를 통해 access token을 발급할 때 사용
+- **password**
+  - username/password 방식으로 access token 발급
+  - 권한 서버, 리소스 서버, 클라이언트가 모두 같은 시스템에서 사용
 - **refresh_token**
   - access token 만료 후 재발급을 위해 사용하는 토큰 
+- **implicit**  
+  - 바로 access token 발급
+  - 
 
 ### Authorization Code Grant
 자체 생성한 Authorization Code를 전달하여 사용  
@@ -36,5 +40,5 @@ Authorization : Bearer {ACCESS_TOKEN}
 
 
 ---
-https://blog.naver.com/mds_datasecurity/222182943542
+https://blog.naver.com/mds_datasecurity/222182943542  
 https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/
